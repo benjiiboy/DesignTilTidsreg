@@ -9,14 +9,14 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <TextBlock HorizontalAlignment="Left" Margin="382,142,0,0" TextWrapping="Wrap" Text="Opret Ny Ansat" VerticalAlignment="Top" Height="30" Width="342"/>
-        <TextBox HorizontalAlignment="Left" Margin="382,177,0,0" TextWrapping="Wrap" Text="Navn" VerticalAlignment="Top" Width="342"/>
-        <TextBox HorizontalAlignment="Left" Margin="382,214,0,0" TextWrapping="Wrap" Text="Adresse" VerticalAlignment="Top" Width="342"/>
-        <TextBox HorizontalAlignment="Left" Margin="382,251,0,0" TextWrapping="Wrap" Text="Mobil" VerticalAlignment="Top" Width="342"/>
-        <TextBox HorizontalAlignment="Left" Margin="382,288,0,0" TextWrapping="Wrap" Text="Stilling" VerticalAlignment="Top" Width="342"/>
-        <TextBox HorizontalAlignment="Left" Margin="382,325,0,0" TextWrapping="Wrap" Text="Reg nr" VerticalAlignment="Top" Width="342"/>
-        <TextBox HorizontalAlignment="Left" Margin="382,362,0,0" TextWrapping="Wrap" Text="Konto nr" VerticalAlignment="Top" Width="342"/>
-        <TextBox HorizontalAlignment="Left" Margin="382,399,0,0" TextWrapping="Wrap" Text="Time løn" VerticalAlignment="Top" Width="342"/>
-        <TextBox HorizontalAlignment="Left" Margin="382,436,0,0" TextWrapping="Wrap" Text="CPR-NR" VerticalAlignment="Top" Width="342"/>
+        <TextBox HorizontalAlignment="Left" Margin="382,177,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="342" PlaceholderText="Navn"/>
+        <TextBox HorizontalAlignment="Left" Margin="382,214,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="342" PlaceholderText="Adresse"/>
+        <TextBox HorizontalAlignment="Left" Margin="382,251,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="342" PlaceholderText="Mobil"/>
+        <TextBox HorizontalAlignment="Left" Margin="382,288,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="342" PlaceholderText="Stilling"/>
+        <TextBox HorizontalAlignment="Left" Margin="382,325,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="342" PlaceholderText="Reg nr"/>
+        <TextBox HorizontalAlignment="Left" Margin="382,362,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="342" PlaceholderText="Konto nr"/>
+        <TextBox HorizontalAlignment="Left" Margin="382,399,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="342" PlaceholderText="Time løn"/>
+        <TextBox HorizontalAlignment="Left" Margin="382,436,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="342" PlaceholderText="CPR-NR"/>
         <Button Content="Tilbage" HorizontalAlignment="Left" Margin="50,30,0,0" VerticalAlignment="Top" Height="44" Width="98" Click="Button_Click"/>
         <Button Content="Opret" HorizontalAlignment="Left" Margin="382,488,0,0" VerticalAlignment="Top" Height="45" Width="172"/>
 
