@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="DesignTilTidsreg.view.OverarbejdePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DesignTilTidsreg.view"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <ListView HorizontalAlignment="Left" Height="341" Margin="379,148,0,0" VerticalAlignment="Top" Width="455" BorderThickness="2" BorderBrush="Black"/>
+        <TextBlock HorizontalAlignment="Left" Margin="379,97,0,0" TextWrapping="Wrap" Text="Antal arbejdende timer" VerticalAlignment="Top" Height="41" Width="455" FontSize="22"/>
+        <Button Content="Tilføj Overarbejde" HorizontalAlignment="Left" Margin="391,544,0,0" VerticalAlignment="Top" Height="67" Width="200" FontSize="20" Click="Button_Click_1"/>
+        <Button Content="Slet overarbejde" HorizontalAlignment="Left" Margin="624,544,0,0" VerticalAlignment="Top" Height="67" Width="200" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="391,494,0,0" TextWrapping="Wrap" Text="Total Antal Timer:" VerticalAlignment="Top" Height="45" Width="433" FontSize="20"/>
+        <Button Content="Tilbage" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="52" Width="82" Click="Button_Click"/>
+
+    </Grid>
+</Page>

@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="DesignTilTidsreg.view.BrugerPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DesignTilTidsreg.view"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Bruger" VerticalAlignment="Top" Height="66" Width="126" FontSize="22"/>
+        <Button Content="Tjek Ind" HorizontalAlignment="Left" Height="168" Margin="253,163,0,0" VerticalAlignment="Top" Width="264" FontSize="36"/>
+        <Button Content="Tjek Ud" HorizontalAlignment="Left" Height="168" Margin="556,163,0,0" VerticalAlignment="Top" Width="264" FontSize="36"/>
+        <Button Content="Arbejdstimer" HorizontalAlignment="Left" Height="168" Margin="253,377,0,0" VerticalAlignment="Top" Width="264" FontSize="36" Click="Button_Click"/>
+        <Button Content="Lønseddel" HorizontalAlignment="Left" Height="168" Margin="556,377,0,0" VerticalAlignment="Top" Width="264" FontSize="36"/>
+        <Button Content="Log Ud" HorizontalAlignment="Left" Margin="27,671,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
+
+    </Grid>
+</Page>
