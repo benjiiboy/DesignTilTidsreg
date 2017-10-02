@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Diagnostics;
+using System.Threading;
 using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -12,6 +14,8 @@ namespace DesignTilTidsreg.view
     /// </summary>
     public sealed partial class BrugerPage : Page
     {
+        Stopwatch stopwatch = new Stopwatch();
+
         public BrugerPage()
         {
             this.InitializeComponent();
@@ -30,9 +34,10 @@ namespace DesignTilTidsreg.view
 
         private async void CheckInd(object sender, RoutedEventArgs e)
         {
+            stopwatch.Start();
+
             TjekUd.IsEnabled = true;
             TjekInd.IsEnabled = false;
-
 
             var dialog = new MessageDialog("Du er nu Checket Ind");
             await dialog.ShowAsync();
@@ -41,17 +46,22 @@ namespace DesignTilTidsreg.view
 
         private async void CheckUd(object sender, RoutedEventArgs e)
         {
+
+            TimeSpan ts = stopwatch.Elapsed;
+
+            string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
+                ts.Hours, ts.Minutes, ts.Seconds,
+                ts.Milliseconds / 10);
+
+           stopwatch.Stop();
+           stopwatch.Reset();
+
             TjekUd.IsEnabled = false;
             TjekInd.IsEnabled = true;
 
-
-            var dialog = new MessageDialog("Du er nu Checket Ud");
+            var dialog = new MessageDialog($"Du er nu Checket Ud og har arbejdet :{elapsedTime}");
             await dialog.ShowAsync();
         }
-
-
-
-
 
     }
 }

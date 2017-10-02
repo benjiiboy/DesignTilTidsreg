@@ -13,7 +13,7 @@
         <TextBlock x:Name="AnsatteBlock" HorizontalAlignment="Left" Margin="571,89,0,0" TextWrapping="Wrap" Text="Ansatte" VerticalAlignment="Top" Height="47" Width="123" FontSize="36"/>
         <TextBox x:Name="SøgeBox" HorizontalAlignment="Left" Margin="321,546,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="26" Width="626" PlaceholderText="Søge Felt"/>
         <Button Content="Tilføj Ny Ansat" HorizontalAlignment="Left" Margin="321,583,0,0" VerticalAlignment="Top" Width="200" Click="Button_Click"/>
-        <Button Content="Frigiv Lønseddel" HorizontalAlignment="Left" Margin="747,583,0,0" VerticalAlignment="Top" Width="200"/>
+        <Button x:Name="FrigivLs" Content="Frigiv Lønseddel" HorizontalAlignment="Left" Margin="747,583,0,0" VerticalAlignment="Top" Width="200" Click="Button_Click_2"/>
         <Button Content="Fjern Ansat" HorizontalAlignment="Left" Margin="535,583,0,0" VerticalAlignment="Top" Width="200"/>
         <Button Content="Log Ud" HorizontalAlignment="Left" Margin="10,665,0,0" VerticalAlignment="Top" Height="45" Width="99" Click="Button_Click_1"/>
 

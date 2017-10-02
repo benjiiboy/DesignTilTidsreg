@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using DesignTilTidsreg.view;
+using Windows.UI.Popups;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -26,6 +27,7 @@ namespace DesignTilTidsreg
         public MainPage()
         {
             this.InitializeComponent();
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -37,5 +39,12 @@ namespace DesignTilTidsreg
         {
             Frame.Navigate(typeof(Login));
         }
+
+        private async void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            var dialog = new MessageDialog("Lønseddelerne nu frigivet");
+            await dialog.ShowAsync();
+        }
+
     }
 }
