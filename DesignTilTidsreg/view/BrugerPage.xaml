@@ -9,8 +9,8 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Bruger" VerticalAlignment="Top" Height="66" Width="126" FontSize="22"/>
-        <Button Content="Tjek Ind" HorizontalAlignment="Left" Height="168" Margin="253,163,0,0" VerticalAlignment="Top" Width="264" FontSize="36"/>
-        <Button Content="Tjek Ud" HorizontalAlignment="Left" Height="168" Margin="556,163,0,0" VerticalAlignment="Top" Width="264" FontSize="36"/>
+        <Button x:Name="TjekInd" Content="Tjek Ind" HorizontalAlignment="Left" Height="168" Margin="253,163,0,0" VerticalAlignment="Top" Width="264" FontSize="36" Click="CheckInd" />
+        <Button x:Name="TjekUd" Content="Tjek Ud" HorizontalAlignment="Left" Height="168" Margin="556,163,0,0" VerticalAlignment="Top" Width="264" FontSize="36" Click="CheckUd" IsEnabled="False"/>
         <Button Content="Arbejdstimer" HorizontalAlignment="Left" Height="168" Margin="253,377,0,0" VerticalAlignment="Top" Width="264" FontSize="36" Click="Button_Click"/>
         <Button Content="Lønseddel" HorizontalAlignment="Left" Height="168" Margin="556,377,0,0" VerticalAlignment="Top" Width="264" FontSize="36"/>
         <Button Content="Log Ud" HorizontalAlignment="Left" Margin="27,671,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>

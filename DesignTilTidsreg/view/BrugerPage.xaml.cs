@@ -1,17 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -25,6 +15,7 @@ namespace DesignTilTidsreg.view
         public BrugerPage()
         {
             this.InitializeComponent();
+            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -36,5 +27,31 @@ namespace DesignTilTidsreg.view
         {
             Frame.Navigate(typeof(Login));
         }
+
+        private async void CheckInd(object sender, RoutedEventArgs e)
+        {
+            TjekUd.IsEnabled = true;
+            TjekInd.IsEnabled = false;
+
+
+            var dialog = new MessageDialog("Du er nu Checket Ind");
+            await dialog.ShowAsync();
+        }
+
+
+        private async void CheckUd(object sender, RoutedEventArgs e)
+        {
+            TjekUd.IsEnabled = false;
+            TjekInd.IsEnabled = true;
+
+
+            var dialog = new MessageDialog("Du er nu Checket Ud");
+            await dialog.ShowAsync();
+        }
+
+
+
+
+
     }
 }
